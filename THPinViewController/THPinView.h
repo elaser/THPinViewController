@@ -31,5 +31,6 @@
 @property (nonatomic, assign) BOOL disableCancel;
 
 - (instancetype)initWithDelegate:(id<THPinViewDelegate>)delegate NS_DESIGNATED_INITIALIZER;
+- (void)resetInput;
 
 @end

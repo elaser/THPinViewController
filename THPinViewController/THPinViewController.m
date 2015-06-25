@@ -12,9 +12,9 @@
 
 @interface THPinViewController () <THPinViewDelegate>
 
-@property (nonatomic, strong) THPinView *pinView;
 @property (nonatomic, strong) UIView *blurView;
 @property (nonatomic, strong) NSArray *blurViewContraints;
+@property (nonatomic, strong) THPinView *pinView;
 
 @end
 
@@ -235,6 +235,11 @@
             }
         }];
     }
+}
+
+#pragma mark - added in hacky way
+- (void) triggerResetInput {
+    [self.pinView resetInput];
 }
 
 @end

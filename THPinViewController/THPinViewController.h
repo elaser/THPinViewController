@@ -43,5 +43,6 @@ static const NSInteger THPinViewControllerContentViewTag = 14742;
 @property (nonatomic, assign) BOOL disableCancel; // hides the cancel button
 
 - (instancetype)initWithDelegate:(id<THPinViewControllerDelegate>)delegate NS_DESIGNATED_INITIALIZER;
+- (void) triggerResetInput;
 
 @end
